@@ -44,19 +44,6 @@ int iskill(char *cmd){  //checks if the user entered "kill"
   return 0;
 }
 
-
-
-/*
- * The tokenify() function from lab 3, with one modification,
- * for you to use.
- *
- * The modification is that it also takes a second parameter,
- * which is the set of characters on which to "split" the input.
- * In lab 3, this was always " \t\n", but you can call tokenify
- * to split on other characters, too, with the implementation below.
- * Hint: you can split on ";" in order to separate the commands on
- * a single command line.
- */
 char** tokenify(const char *s, const char *sep) {
     char *word = NULL;
 
